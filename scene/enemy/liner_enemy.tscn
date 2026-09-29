@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dd6fmaowch0le"]
+
+[ext_resource type="Script" uid="uid://dt5e8p8i7oceh" path="res://liner_enemy.gd" id="1_crtse"]
+[ext_resource type="PackedScene" uid="uid://dpj5ufx4igtkl" path="res://scene/enemy/enemy.tscn" id="2_yvr1x"]
+
+[node name="liner_enemy" type="Node2D" unique_id=628624551]
+script = ExtResource("1_crtse")
+
+[node name="enemy" parent="." unique_id=1026783419 instance=ExtResource("2_yvr1x")]

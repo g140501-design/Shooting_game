@@ -11,8 +11,14 @@ config_version=5
 [application]
 
 config/name="260929_syuthingu_game"
+run/main_scene="uid://dtidf6x5lt2ua"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=800
+window/size/viewport_height=600
 
 [file_customization]
 
@@ -29,6 +35,7 @@ folder_colors={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"

@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://s77eef4tu2om"]
+
+[ext_resource type="Texture2D" uid="uid://d3koj3r4tbort" path="res://assets/images/grass.png" id="1_eluqv"]
+[ext_resource type="Script" uid="uid://dy0dlhylndfqh" path="res://scene/stage/grass.gd" id="2_kymmr"]
+[ext_resource type="Texture2D" uid="uid://cd5tajlxsdrpy" path="res://assets/images/bg1.png" id="3_noqdi"]
+[ext_resource type="Texture2D" uid="uid://38gix15lk6bu" path="res://assets/images/bg2.png" id="4_i5kid"]
+[ext_resource type="Texture2D" uid="uid://c8vsarffynv7k" path="res://assets/images/bg3.png" id="5_fo4ry"]
+
+[node name="bg" type="Sprite2D" unique_id=1749438994]
+texture = ExtResource("1_eluqv")
+offset = Vector2(400, 300)
+script = ExtResource("2_kymmr")
+textures = Array[Texture2D]([ExtResource("3_noqdi"), ExtResource("4_i5kid"), ExtResource("5_fo4ry")])

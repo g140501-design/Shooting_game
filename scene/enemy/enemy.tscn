@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dpj5ufx4igtkl"]
+
+[ext_resource type="Script" uid="uid://fjnitirh27lb" path="res://scene/enemy/enemy.gd" id="1_nytjq"]
+[ext_resource type="Texture2D" uid="uid://bxp1ji170jjvs" path="res://assets/images/ships/ship_0001.png" id="2_msiye"]
+
+[node name="enemy" type="Node2D" unique_id=1026783419]
+rotation = 3.1415927
+script = ExtResource("1_nytjq")
+
+[node name="Ship0001" type="Sprite2D" parent="." unique_id=1089444077]
+scale = Vector2(2, 2)
+texture = ExtResource("2_msiye")
+
+[node name="Timer" type="Timer" parent="." unique_id=1462376638]
+autostart = true
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=404617732]
+rect = Rect2(-33, -24, 66, 48)
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

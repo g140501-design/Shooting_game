@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://ghlyryc5xreq"]
+
+[ext_resource type="PackedScene" uid="uid://p0tpbdwqm3sv" path="res://scene/tama/tama.tscn" id="1_t0ree"]
+[ext_resource type="Texture2D" uid="uid://dlwf6jjtf77ru" path="res://assets/images/tama2.png" id="2_uap7e"]
+
+[node name="Tama" unique_id=539343995 instance=ExtResource("1_t0ree")]
+
+[node name="Tama1" parent="." index="0" unique_id=344722821]
+texture = ExtResource("2_uap7e")

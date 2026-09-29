@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://p0tpbdwqm3sv"]
+
+[ext_resource type="Texture2D" uid="uid://78ynpm2wiewb" path="res://assets/images/tama1.png" id="1_k1p6q"]
+[ext_resource type="Script" uid="uid://bc7g8x6r374t6" path="res://scene/tama/tama.gd" id="1_ppurc"]
+
+[node name="Tama" type="Node2D" unique_id=539343995]
+script = ExtResource("1_ppurc")
+
+[node name="Tama1" type="Sprite2D" parent="." unique_id=344722821]
+scale = Vector2(2, 2)
+texture = ExtResource("1_k1p6q")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=437255466]
+rect = Rect2(-8, -16, 16, 32)
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

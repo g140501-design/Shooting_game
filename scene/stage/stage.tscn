@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dtidf6x5lt2ua"]
+
+[ext_resource type="PackedScene" uid="uid://s77eef4tu2om" path="res://scene/stage/grass.tscn" id="1_oowse"]
+[ext_resource type="PackedScene" uid="uid://c36juctraiyrr" path="res://scene/Player/player.tscn" id="2_wlpnx"]
+[ext_resource type="PackedScene" uid="uid://dpj5ufx4igtkl" path="res://scene/enemy/enemy.tscn" id="3_7efvv"]
+[ext_resource type="PackedScene" uid="uid://dd6fmaowch0le" path="res://scene/enemy/liner_enemy.tscn" id="4_pj41a"]
+
+[node name="stage" type="Node2D" unique_id=1123251020]
+
+[node name="bg" parent="." unique_id=1749438994 instance=ExtResource("1_oowse")]
+
+[node name="bg2" parent="." unique_id=1207919928 instance=ExtResource("1_oowse")]
+position = Vector2(0, -600)
+
+[node name="Player" parent="." unique_id=2038967681 instance=ExtResource("2_wlpnx")]
+position = Vector2(400, 544)
+
+[node name="enemy" parent="." unique_id=1026783419 instance=ExtResource("3_7efvv")]
+position = Vector2(392, 176)
+
+[node name="liner_enemy" parent="." unique_id=628624551 instance=ExtResource("4_pj41a")]
+position = Vector2(376, -224)
